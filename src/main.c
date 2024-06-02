@@ -12,4 +12,5 @@
 // Main function that initializes registers with required values and then waits for interrupts.
 int main(void) {
     // TODO!
+    for(;;);
 }
