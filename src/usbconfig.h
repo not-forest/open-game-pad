@@ -21,7 +21,7 @@ General Description:
 /* This is the port where the USB bus is connected. When you configure it to
  * "B", the registers PORTB, PINB and DDRB will be used.
  */
-#define USB_CFG_IOPORTNAME      D
+#define USB_CFG_IOPORTNAME      B
 /* This is the bit number in USB_CFG_IOPORT where the USB D- line is connected.
  * This may be any bit in the port.
  */
@@ -278,7 +278,7 @@ General Description:
  * "usbHidReportDescriptor" to your code which contains the report descriptor.
  * Don't forget to keep the array and this define in sync!
  */
-#define USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH    52
+#define USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH    58
 
 /* #define USB_PUBLIC static */
 /* Use the define above if you #include usbdrv.c instead of linking against it.
