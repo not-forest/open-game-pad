@@ -1,5 +1,5 @@
 /* 
- *  Header file that defines all required constants for 'Open Game Padu' main code.
+ *  Header file that defines all required constants for 'Open Game Pad' main code.
  * */
 
 #ifndef __OGPAD_H__
@@ -19,12 +19,24 @@ typedef struct {
     uint16_t bmask;
     // Only two bits matter.
     uint8_t joyb; 
-    // Left joystick's horizontal and vertical axises.
-    int8_t lx;
-    int8_t ly;
-    // Right joystick's horizontal and vertical axises. 
-    int8_t rx;
-    int8_t ry;
-} report_t;
+    // The joystick axises are defined in the following order: left HORIZONTAL, left VERTICAL, right HORIZONTAL, right VERTICAL.
+    int8_t joyax[4];
+} __attribute__((packed)) report_t;
+
+/* 
+ *  Input Counter Byte. Counts which input (ANALOG/DIGITAL) is currently in
+ *
+ *  Custom union type that allows for using one 8-bit variable to manipulate with indexes of smaller sizes.
+ *  This union allows to manipulate the data without bitwise operation, making it a better readibility choice. 
+ *  Note that ANALOG and DIGITAL fields are READONLY must not never be used to write new data. */
+typedef union {
+    uint8_t raw;            // Full byte with five last bits always unused.
+    
+    uint8_t ANALOG: 2;      // Two lower bits for 4 analog inputs.
+    uint8_t DIGITAL: 3;     // 3 lower bits for 18 digital inputs encoded in a 5-bit value MSB first. 
+} inputCounter;
+
+// Game Pad report holds the current pressed keys and joystick axises derivatives.
+static report_t REPORT;
 
 #endif
