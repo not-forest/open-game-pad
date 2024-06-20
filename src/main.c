@@ -17,10 +17,14 @@
 #include "../usbdrv/usbdrv.h"
 #include "ogpad.h"
 
-// Game Pad report holds the current pressed keys and joystick axises derivatives.
-static report_t REPORT;
+// Pointer to the REPORT structure.
+static report_t *RPTR = &REPORT;
 // Determines how often the device should send a report to the host when there is no change in the state of the inputs.
 static uchar IDLE_RATE;
+// Inpur counter allows to define which key we are reading as a digital input or which axis as an analog input.
+static volatile inputCounter ic = { .raw = 0 };
+// This value will accumulate undecoded value defining the pressed keys.
+static volatile uint8_t keyPlex;
 
 /* 
  * Game Pad report descriptor. 
@@ -64,7 +68,23 @@ PROGMEM const char usbDescriptorHidReport[REPORT_DESCRIPTOR_SIZE] = {
 
 // This is the function from the V-USB library that must be defined here to properly handle the requests from the host.
 usbMsgLen_t usbFunctionSetup(uchar raw[8]) {
-    // TODO!
+    usbRequest_t *req = (void *) raw;
+
+    // Class request type.
+    if((req->bmRequestType & USBRQ_TYPE_MASK) == USBRQ_TYPE_CLASS){
+        if(req->bRequest == USBRQ_HID_GET_REPORT){  /* wValue: ReportType (highbyte), ReportID (lowbyte) */
+            // we only have one report type, so don't look at wValue
+            usbMsgPtr = (unsigned short) (void *) RPTR;
+            return sizeof(REPORT);
+        }else if(req->bRequest == USBRQ_HID_GET_IDLE){
+            usbMsgPtr = (unsigned short) &IDLE_RATE;
+            return 1;
+        }else if(req->bRequest == USBRQ_HID_SET_IDLE){
+            IDLE_RATE = req->wValue.bytes[1];
+        }
+    }else{
+        /* Vendor specific requests could be implemented here to built up the firmware abilities. */
+    } 
 
     return 0;
 }
@@ -73,7 +93,7 @@ usbMsgLen_t usbFunctionSetup(uchar raw[8]) {
 int __attribute__((noreturn)) main(void) {
     /*      GPIO Configuration      */
     // PB1, PB2 lines are handled by V-USB. PB0 is a digital input line by default. 
-    // To use CLKO function on PB4 pin a CKOUT fuse has to be programmed. This is handled by avrdude.
+    // The clock is being bit-banged inside the ADC interrupt handler.
     DDRB = 1 << PB4;        // CLK output.
 
     /*      ADC Configuration       */
@@ -81,12 +101,12 @@ int __attribute__((noreturn)) main(void) {
     // in the datasheet;
     // - Holding high bits in ADCH as a result;
     // - Single ended input with internal Vcc voltage reference is being used;
-    ADCSRA = (1 << ADPS2) | (1 << ADLAR);
-    ADMUX = (1 << MUX1) | (1 << MUX0);
+    ADCSRA = (1 << ADPS2) | (1 << ADSC) | (1 << ADIF);
+    ADMUX = (1 << MUX1) | (1 << MUX0) | (1 << ADLAR);
 
     wdt_enable(WDTO_1S);                   // Enabling the watchdog timer and selecting the 1s expiring.
     usbInit();                             // Start of USB handling.
-
+    
     usbDeviceDisconnect();                 // Forcing re-enumeration.
     wdt_reset();                           // One second is enough for the next step.
     _delay_ms(300);                        // USB would be disconnected for 300 ms.
@@ -98,8 +118,28 @@ int __attribute__((noreturn)) main(void) {
         wdt_reset();
         usbPoll();                         // Polling the USB lines
         
+        // Here we are sending the current data we have.
         if(usbInterruptIsReady()) {        // If interrupt is ready, sending the newest data.
-            usbSetInterrupt((void *) &REPORT, sizeof(REPORT));
+            usbSetInterrupt((void *) RPTR, sizeof(REPORT));
+        }
+
+        // Here we obtain the undecoded byte from the PISO register.
+        if(keyPlex & (1 << 7)) {           // The MSB in 'keyPlex' variable is indicating if button was pressed.
+           // TODO! DECODING. 
         }
     }
+}
+
+/* 
+ * This interrupt handles ADC data on AIN line. 
+ *
+ * It also does the output clock control by bitbanging, so all outside components are dependent on
+ * ADC convertion. This way it is possible to decode all digital and analog inputs.
+ * */
+ISR(ADC_vect) {
+    PORTB ^= (1 << PB4);                          // Clock tick.
+    RPTR->joyax[ic.ANALOG] = ADCH;                // Writing the next analog input to the proper location.
+    keyPlex |= (PINB & (1 << PB0)) << ic.DIGITAL; // Writing the next bit obtained from the PISO register MSB first. 
+    ADCSRA |= (1 << ADSC);                        // Starting new ADC conversion.
+    ic.raw++;
 }
