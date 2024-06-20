@@ -4692,12 +4692,6 @@
 		(uuid "2212e392-125d-4e52-90e0-e5718f5d14bb")
 	)
 	(junction
-		(at 154.94 227.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "24666084-a3ac-4fc1-8ed5-be8b3d13fbb6")
-	)
-	(junction
 		(at 118.11 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4738,12 +4732,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "383861a4-2787-4de6-beb6-01f919e10fd7")
-	)
-	(junction
-		(at 140.97 234.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38c516ee-1132-42d1-924b-184b16a0ca4a")
 	)
 	(junction
 		(at 74.93 231.14)
@@ -4878,6 +4866,12 @@
 		(uuid "6db3d70f-5126-4ea5-b96a-82a2293acafd")
 	)
 	(junction
+		(at 140.97 234.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e90d30d-ed3a-422a-8c27-75ec9d3a7e18")
+	)
+	(junction
 		(at 158.75 234.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4894,6 +4888,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75d7b17b-3fae-4836-9fae-544365c5c3f7")
+	)
+	(junction
+		(at 144.78 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75e5d71f-eff2-4194-a26c-4de9771396f6")
 	)
 	(junction
 		(at 40.64 219.71)
@@ -4974,6 +4974,12 @@
 		(uuid "941b4601-a2b1-4851-b57b-752a84033c97")
 	)
 	(junction
+		(at 120.65 227.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9921f82e-026a-4e10-8e97-5a7461214434")
+	)
+	(junction
 		(at 158.75 209.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5014,12 +5020,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4c66c48-79d3-4903-a3d6-e539248eafd2")
-	)
-	(junction
-		(at 154.94 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c07e41ca-1613-4427-b324-1d2876083d07")
 	)
 	(junction
 		(at 76.2 135.89)
@@ -5291,7 +5291,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 187.96) (xy 154.94 187.96)
+			(xy 106.68 187.96) (xy 144.78 187.96)
 		)
 		(stroke
 			(width 0)
@@ -5421,16 +5421,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 209.55) (xy 140.97 234.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12b93bbe-c6ed-4c14-8ca7-dea7745dfed7")
-	)
-	(wire
-		(pts
 			(xy 119.38 229.87) (xy 120.65 229.87)
 		)
 		(stroke
@@ -5441,7 +5431,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 199.39) (xy 134.62 199.39)
+			(xy 120.65 199.39) (xy 124.46 199.39)
 		)
 		(stroke
 			(width 0)
@@ -5498,6 +5488,16 @@
 			(type default)
 		)
 		(uuid "1bf6dcae-0ad3-4369-b568-f9e1751b2a7b")
+	)
+	(wire
+		(pts
+			(xy 135.89 234.95) (xy 140.97 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c90c534-36c4-4c65-aaf9-5280ff005147")
 	)
 	(wire
 		(pts
@@ -5651,7 +5651,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 209.55) (xy 134.62 209.55)
+			(xy 140.97 209.55) (xy 124.46 209.55)
 		)
 		(stroke
 			(width 0)
@@ -5678,6 +5678,16 @@
 			(type default)
 		)
 		(uuid "2d46a040-3fa5-47ae-94ac-e34b5d796c83")
+	)
+	(wire
+		(pts
+			(xy 120.65 227.33) (xy 165.1 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e5f9c0d-3235-4130-8e74-4478413ecd2b")
 	)
 	(wire
 		(pts
@@ -5711,17 +5721,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 234.95) (xy 140.97 234.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31b7240b-0ff5-46e9-9b85-76529dcd055a")
-	)
-	(wire
-		(pts
-			(xy 120.65 229.87) (xy 120.65 199.39)
+			(xy 120.65 229.87) (xy 120.65 227.33)
 		)
 		(stroke
 			(width 0)
@@ -6041,16 +6041,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 227.33) (xy 165.1 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5bc329c5-5dc7-4339-92c4-980331018061")
-	)
-	(wire
-		(pts
 			(xy 90.17 45.72) (xy 92.71 45.72)
 		)
 		(stroke
@@ -6101,6 +6091,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 209.55) (xy 140.97 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "696c9fc8-90bd-4d41-a743-69f9b1c70c4f")
+	)
+	(wire
+		(pts
 			(xy 60.96 121.92) (xy 60.96 109.22)
 		)
 		(stroke
@@ -6148,6 +6148,16 @@
 			(type default)
 		)
 		(uuid "710da2b8-ed01-4276-9598-63eca36b872e")
+	)
+	(wire
+		(pts
+			(xy 144.78 187.96) (xy 177.8 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "716b5da0-dbb1-436d-8fe4-98e14593eb7c")
 	)
 	(wire
 		(pts
@@ -6278,16 +6288,6 @@
 			(type default)
 		)
 		(uuid "7b3c6b64-e88f-4a75-8d78-64314b01207b")
-	)
-	(wire
-		(pts
-			(xy 154.94 199.39) (xy 154.94 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e28edad-7b98-4d03-a805-a670e42b61ac")
 	)
 	(wire
 		(pts
@@ -6501,16 +6501,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 187.96) (xy 177.8 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f329613-9fc7-45b8-966b-715a536fdb6e")
-	)
-	(wire
-		(pts
 			(xy 119.38 222.25) (xy 165.1 222.25)
 		)
 		(stroke
@@ -6531,7 +6521,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 227.33) (xy 154.94 232.41)
+			(xy 144.78 199.39) (xy 144.78 232.41)
 		)
 		(stroke
 			(width 0)
@@ -7011,6 +7001,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 227.33) (xy 120.65 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfee4ba0-6a84-4382-a34f-ea4bfa8b5597")
+	)
+	(wire
+		(pts
 			(xy 133.35 66.04) (xy 133.35 60.96)
 		)
 		(stroke
@@ -7071,7 +7071,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 187.96) (xy 154.94 194.31)
+			(xy 144.78 187.96) (xy 144.78 194.31)
 		)
 		(stroke
 			(width 0)
@@ -7271,7 +7271,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 232.41) (xy 154.94 232.41)
+			(xy 119.38 232.41) (xy 144.78 232.41)
 		)
 		(stroke
 			(width 0)
@@ -7421,7 +7421,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 209.55) (xy 134.62 204.47)
+			(xy 124.46 209.55) (xy 124.46 204.47)
 		)
 		(stroke
 			(width 0)
@@ -9433,7 +9433,7 @@
 	)
 	(symbol
 		(lib_id "SN74AHC1G04DBVR:SN74AHC1G04DBVR")
-		(at 144.78 199.39 0)
+		(at 134.62 199.39 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9442,7 +9442,7 @@
 		(dnp no)
 		(uuid "42380d5e-d519-41d1-8a6e-27e417168dd1")
 		(property "Reference" "U3"
-			(at 144.78 186.69 0)
+			(at 134.62 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9450,7 +9450,7 @@
 			)
 		)
 		(property "Value" "SN74AHC1G04DBVR"
-			(at 144.78 189.23 0)
+			(at 134.62 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9458,7 +9458,7 @@
 			)
 		)
 		(property "Footprint" "SN74AHC1G04DBVR:SOT95P280X145-5N"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9468,7 +9468,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9477,7 +9477,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9486,7 +9486,7 @@
 			)
 		)
 		(property "MF" "Texas Instruments"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9496,7 +9496,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.45mm"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9506,7 +9506,7 @@
 			)
 		)
 		(property "Package" "SOT-23-5 Texas Instruments"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9516,7 +9516,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9526,7 +9526,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/SN74AHC1G04DBVR/Texas+Instruments/view-part/?ref=eda"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9536,7 +9536,7 @@
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9546,7 +9546,7 @@
 			)
 		)
 		(property "PARTREV" "AD"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9556,7 +9556,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74AHC1G04DBVR/Texas+Instruments/view-part/?ref=snap"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9566,7 +9566,7 @@
 			)
 		)
 		(property "MP" "SN74AHC1G04DBVR"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9576,7 +9576,7 @@
 			)
 		)
 		(property "Description_1" "\nSingle 2-V to 5.5-V inverter\n"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9586,7 +9586,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9596,7 +9596,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Texas Instruments"
-			(at 144.78 199.39 0)
+			(at 134.62 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
