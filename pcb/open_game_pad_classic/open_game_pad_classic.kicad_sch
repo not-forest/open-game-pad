@@ -8,6 +8,190 @@
 		(title "Open GamePad Controller Scheme")
 	)
 	(lib_symbols
+		(symbol "74xGxx:74AHC1G00"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -2.54 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74AHC1G00"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single NAND Gate, Low-Voltage CMOS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Single Gate NAND LVC CMOS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT* SG-*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "74AHC1G00_0_1"
+				(arc
+					(start 0 -5.08)
+					(mid 5.0579 0)
+					(end 0 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy -7.62 -5.08) (xy -7.62 5.08) (xy 0 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "74AHC1G00_1_1"
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 12.7 0 180)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "74xx:74HC165"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3450,414 +3634,6 @@
 				)
 			)
 		)
-		(symbol "SN74AHC1G04DBVR:SN74AHC1G04DBVR"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 8.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "SN74AHC1G04DBVR"
-				(at -5.08 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "SN74AHC1G04DBVR:SOT95P280X145-5N"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "1.45mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "SOT-23-5 Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/SN74AHC1G04DBVR/Texas+Instruments/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "IPC-7351B"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "AD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74AHC1G04DBVR/Texas+Instruments/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "SN74AHC1G04DBVR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "\nSingle 2-V to 5.5-V inverter\n"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "SN74AHC1G04DBVR_0_0"
-				(rectangle
-					(start -5.08 -7.62)
-					(end 5.08 7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 0 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -2.54) (xy -2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.54 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy 1.905 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.143) (xy 0 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.08) (xy 0 1.143)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0) (xy -2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.1844 0)
-					(radius 0.254)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 10.16 5.08 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 10.16 -5.08 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 5.08 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "custom:74HC163"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4638,6 +4414,12 @@
 		(uuid "00fba0c3-4b10-4565-8945-4166a91ba920")
 	)
 	(junction
+		(at 123.19 227.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "089285b9-e76b-45a4-a494-4824dab2f3c2")
+	)
+	(junction
 		(at 41.91 214.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4678,6 +4460,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1be01dce-df22-472f-8fe1-6a174cc7e792")
+	)
+	(junction
+		(at 151.13 204.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c19f8fe-1564-40da-b2ef-3c89756aed19")
 	)
 	(junction
 		(at 90.17 45.72)
@@ -4812,12 +4600,6 @@
 		(uuid "504ccbb7-d8e6-4662-9722-616b9a323c42")
 	)
 	(junction
-		(at 158.75 204.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "598e57da-2c4d-4ed7-b21a-f6cfdcbba796")
-	)
-	(junction
 		(at 63.5 219.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4888,12 +4670,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75d7b17b-3fae-4836-9fae-544365c5c3f7")
-	)
-	(junction
-		(at 144.78 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "75e5d71f-eff2-4194-a26c-4de9771396f6")
 	)
 	(junction
 		(at 40.64 219.71)
@@ -4972,12 +4748,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "941b4601-a2b1-4851-b57b-752a84033c97")
-	)
-	(junction
-		(at 120.65 227.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9921f82e-026a-4e10-8e97-5a7461214434")
 	)
 	(junction
 		(at 158.75 209.55)
@@ -5074,6 +4844,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e32fb2d8-496e-4cec-9351-e9ba3a9ce04b")
+	)
+	(junction
+		(at 135.89 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e98027c9-3bee-4207-af59-0a957b588f51")
 	)
 	(junction
 		(at 60.96 121.92)
@@ -5174,10 +4950,6 @@
 	(no_connect
 		(at 147.32 128.27)
 		(uuid "a367a664-ae9f-4652-8e87-06967680ef5b")
-	)
-	(no_connect
-		(at 147.32 130.81)
-		(uuid "a50d052c-0c7b-4893-b044-8475d5b8f0f7")
 	)
 	(wire
 		(pts
@@ -5288,16 +5060,6 @@
 			(type default)
 		)
 		(uuid "06dc02c6-af20-4ad3-8e29-12491ef8b972")
-	)
-	(wire
-		(pts
-			(xy 106.68 187.96) (xy 144.78 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07037355-1fbe-44bb-9188-7a8574ddc9f2")
 	)
 	(wire
 		(pts
@@ -5421,23 +5183,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 229.87) (xy 120.65 229.87)
+			(xy 119.38 229.87) (xy 123.19 229.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "12feee87-b246-4b1b-bb35-3857b7855718")
-	)
-	(wire
-		(pts
-			(xy 120.65 199.39) (xy 124.46 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16cbcec4-2cdd-4c9b-8fcc-65afffc472c5")
 	)
 	(wire
 		(pts
@@ -5651,16 +5403,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 209.55) (xy 124.46 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c96a0b8-0f27-46af-8c89-13ca7da5723b")
-	)
-	(wire
-		(pts
 			(xy 71.12 104.14) (xy 71.12 120.65)
 		)
 		(stroke
@@ -5681,13 +5423,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 227.33) (xy 165.1 227.33)
+			(xy 135.89 208.28) (xy 140.97 208.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2e5f9c0d-3235-4130-8e74-4478413ecd2b")
+		(uuid "2d692eaa-b752-44d6-85b5-d43af06263b0")
 	)
 	(wire
 		(pts
@@ -5721,7 +5463,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 229.87) (xy 120.65 227.33)
+			(xy 123.19 229.87) (xy 123.19 227.33)
 		)
 		(stroke
 			(width 0)
@@ -5801,7 +5543,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 232.41) (xy 165.1 232.41)
+			(xy 162.56 232.41) (xy 165.1 232.41)
 		)
 		(stroke
 			(width 0)
@@ -5841,7 +5583,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 207.01) (xy 158.75 204.47)
+			(xy 158.75 201.93) (xy 158.75 207.01)
 		)
 		(stroke
 			(width 0)
@@ -5891,16 +5633,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 204.47) (xy 165.1 204.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cb1eddf-6cbf-41fb-9d8f-680a598aebd8")
-	)
-	(wire
-		(pts
 			(xy 88.9 90.17) (xy 88.9 91.44)
 		)
 		(stroke
@@ -5928,6 +5660,16 @@
 			(type default)
 		)
 		(uuid "4da03dbf-039c-4e26-92a0-b910d42d7da7")
+	)
+	(wire
+		(pts
+			(xy 142.24 130.81) (xy 147.32 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5041511d-9fdc-4cc9-88ea-bcfc3c7a8bb3")
 	)
 	(wire
 		(pts
@@ -6061,16 +5803,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 234.95) (xy 140.97 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "616e88e9-2f4a-40da-8a2d-b90cf789ac64")
-	)
-	(wire
-		(pts
 			(xy 80.01 40.64) (xy 66.04 40.64)
 		)
 		(stroke
@@ -6091,7 +5823,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 209.55) (xy 140.97 234.95)
+			(xy 140.97 208.28) (xy 140.97 234.95)
 		)
 		(stroke
 			(width 0)
@@ -6151,7 +5883,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 187.96) (xy 177.8 187.96)
+			(xy 106.68 187.96) (xy 135.89 187.96)
 		)
 		(stroke
 			(width 0)
@@ -6248,6 +5980,16 @@
 			(type default)
 		)
 		(uuid "79802d34-eb59-4a97-ad70-8f63f0b44600")
+	)
+	(wire
+		(pts
+			(xy 135.89 135.89) (xy 142.24 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79810ab6-667a-4efe-aada-77ef76d5f022")
 	)
 	(wire
 		(pts
@@ -6348,6 +6090,16 @@
 			(type default)
 		)
 		(uuid "82899739-4bdb-4d8c-9ff3-783cfe7cbee7")
+	)
+	(wire
+		(pts
+			(xy 151.13 204.47) (xy 165.1 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8349c454-fead-4a59-98a3-1288dc425fd5")
 	)
 	(wire
 		(pts
@@ -6521,13 +6273,23 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 199.39) (xy 144.78 232.41)
+			(xy 151.13 200.66) (xy 151.13 204.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "90b0a955-9b9b-49a7-adfd-bf178b46f86f")
+	)
+	(wire
+		(pts
+			(xy 142.24 135.89) (xy 142.24 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91e853f3-8bc0-4d01-b884-8966c2e88e00")
 	)
 	(wire
 		(pts
@@ -6821,6 +6583,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 227.33) (xy 165.1 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a75d443b-9dae-484f-850f-a889ce29076d")
+	)
+	(wire
+		(pts
 			(xy 63.5 231.14) (xy 63.5 242.57)
 		)
 		(stroke
@@ -7001,16 +6773,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 227.33) (xy 120.65 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfee4ba0-6a84-4382-a34f-ea4bfa8b5597")
-	)
-	(wire
-		(pts
 			(xy 133.35 66.04) (xy 133.35 60.96)
 		)
 		(stroke
@@ -7021,13 +6783,13 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 204.47) (xy 158.75 201.93)
+			(xy 135.89 187.96) (xy 177.8 187.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c406d383-35de-4532-b489-b1e2c508401e")
+		(uuid "c3701452-4f47-465e-8df0-114f4bf98df0")
 	)
 	(wire
 		(pts
@@ -7068,16 +6830,6 @@
 			(type default)
 		)
 		(uuid "ca23d6ef-f85f-45c3-826e-cbdf23354b70")
-	)
-	(wire
-		(pts
-			(xy 144.78 187.96) (xy 144.78 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca3e8da6-1fd9-4e44-948d-5800f68a524b")
 	)
 	(wire
 		(pts
@@ -7181,6 +6933,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 234.95) (xy 140.97 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7eb90ea-703c-40d9-89f6-9b07dd9d6a3a")
+	)
+	(wire
+		(pts
 			(xy 133.35 22.86) (xy 133.35 27.94)
 		)
 		(stroke
@@ -7271,7 +7033,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 232.41) (xy 144.78 232.41)
+			(xy 119.38 232.41) (xy 151.13 232.41)
 		)
 		(stroke
 			(width 0)
@@ -7288,6 +7050,16 @@
 			(type default)
 		)
 		(uuid "e48088ab-7776-425d-b846-2e07bd00de81")
+	)
+	(wire
+		(pts
+			(xy 151.13 204.47) (xy 151.13 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4eb927f-cd72-4499-9267-2a070e3d23f0")
 	)
 	(wire
 		(pts
@@ -7361,6 +7133,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 198.12) (xy 123.19 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb313033-28cc-4122-a294-197d97e2f548")
+	)
+	(wire
+		(pts
 			(xy 58.42 143.51) (xy 49.53 143.51)
 		)
 		(stroke
@@ -7418,16 +7200,6 @@
 			(type default)
 		)
 		(uuid "f3068c54-28db-4e87-ac35-59746da93194")
-	)
-	(wire
-		(pts
-			(xy 124.46 209.55) (xy 124.46 204.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f317cc0e-7e47-4960-8581-686b3fb610ae")
 	)
 	(wire
 		(pts
@@ -7603,6 +7375,17 @@
 		)
 		(uuid "0d6f5cdc-1f66-44fe-9dd1-5c4373f11b7d")
 	)
+	(label "8TICK"
+		(at 135.89 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "31a1c366-39b5-4e52-b8b4-7f54d94ead12")
+	)
 	(label "Y2"
 		(at 90.17 214.63 0)
 		(fields_autoplaced yes)
@@ -7691,6 +7474,17 @@
 		)
 		(uuid "6c594c90-3b16-42cc-b83f-58609d2410e0")
 	)
+	(label "8TICK"
+		(at 151.13 195.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77cb4e66-84d5-451e-b507-a7182d098b3c")
+	)
 	(label "X1"
 		(at 40.64 242.57 0)
 		(fields_autoplaced yes)
@@ -7758,7 +7552,7 @@
 		(uuid "a9326a2f-d16a-4d20-8533-348ccaa68b95")
 	)
 	(label "CLK"
-		(at 161.29 232.41 0)
+		(at 162.56 232.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9432,204 +9226,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SN74AHC1G04DBVR:SN74AHC1G04DBVR")
-		(at 134.62 199.39 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "42380d5e-d519-41d1-8a6e-27e417168dd1")
-		(property "Reference" "U3"
-			(at 134.62 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SN74AHC1G04DBVR"
-			(at 134.62 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SN74AHC1G04DBVR:SOT95P280X145-5N"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Texas Instruments"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.45mm"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "SOT-23-5 Texas Instruments"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SN74AHC1G04DBVR/Texas+Instruments/view-part/?ref=eda"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC-7351B"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "AD"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74AHC1G04DBVR/Texas+Instruments/view-part/?ref=snap"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SN74AHC1G04DBVR"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\nSingle 2-V to 5.5-V inverter\n"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Texas Instruments"
-			(at 134.62 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "47aa5d61-a38d-48d8-bd53-8ca0f53667e3")
-		)
-		(pin "5"
-			(uuid "c6507b9c-3745-4c93-9c8c-eec4cf568943")
-		)
-		(pin "3"
-			(uuid "3e4b04c1-c3a7-4f62-a7c9-a36b1b0dca79")
-		)
-		(pin "4"
-			(uuid "279d220f-6613-4705-8c06-bfdd9a3399ab")
-		)
-		(pin "2"
-			(uuid "c6b5431d-327b-4b44-970c-deffba10989a")
-		)
-		(instances
-			(project "open_game_pad_classic"
-				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 85.09 40.64 270)
 		(unit 1)
@@ -10779,6 +10375,83 @@
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74AHC1G00")
+		(at 135.89 198.12 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b052006-8176-44d4-b204-0625f28ab2c3")
+		(property "Reference" "U3"
+			(at 123.19 191.8014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74AHC1G00"
+			(at 123.19 194.3414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 135.89 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+			(at 135.89 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single NAND Gate, Low-Voltage CMOS"
+			(at 135.89 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "4aeb8fd6-f982-4c74-b47e-305a3c45c7d2")
+		)
+		(pin "3"
+			(uuid "5b160c1a-f015-4176-b03c-bfa1cdcb5ee5")
+		)
+		(pin "4"
+			(uuid "8e31e6e2-edff-4744-a5bb-38d65b78b636")
+		)
+		(pin "2"
+			(uuid "f7baa9f1-2c26-477c-b9e1-a636dec5a088")
+		)
+		(pin "1"
+			(uuid "25e67246-1101-4a6e-93eb-f520160690ec")
+		)
+		(instances
+			(project "open_game_pad_classic"
+				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
+					(reference "U3")
 					(unit 1)
 				)
 			)
