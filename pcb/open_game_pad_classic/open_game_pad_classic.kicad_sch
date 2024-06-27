@@ -6415,7 +6415,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "048fe621-6524-47a8-b1cf-015bcd6fa46a")
-		(property "Reference" "D11"
+		(property "Reference" "D13"
 			(at 165.1 203.708 0)
 			(effects
 				(font
@@ -6485,7 +6485,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D11")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -6501,7 +6501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0498f4aa-5a49-4779-8490-ecf06819b38c")
-		(property "Reference" "SW2"
+		(property "Reference" "SW8"
 			(at 135.89 224.79 0)
 			(effects
 				(font
@@ -6517,7 +6517,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 135.89 232.41 0)
 			(effects
 				(font
@@ -6559,7 +6559,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW2")
+					(reference "SW8")
 					(unit 1)
 				)
 			)
@@ -6575,7 +6575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04bf8f22-119e-4343-83b6-09f3692f4fe0")
-		(property "Reference" "C6"
+		(property "Reference" "C4"
 			(at 190.5 125.7299 0)
 			(effects
 				(font
@@ -6629,7 +6629,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "C6")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6663,7 +6663,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8W_5.3x5.3mm_P1.27mm"
+		(property "Footprint" "ATTINY85-20SU:SOIC127P798X216-8N"
 			(at 133.35 48.26 0)
 			(effects
 				(font
@@ -6733,7 +6733,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "05f74cf9-6af0-45ff-82c3-0b7a658b3b72")
-		(property "Reference" "D10"
+		(property "Reference" "D11"
 			(at 144.78 237.998 0)
 			(effects
 				(font
@@ -6803,7 +6803,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D10")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -6884,7 +6884,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a93c33a-bd42-4852-b35a-bcdb60da17cd")
-		(property "Reference" "D19"
+		(property "Reference" "D7"
 			(at 125.222 186.69 0)
 			(effects
 				(font
@@ -6954,7 +6954,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D19")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -6970,7 +6970,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d6ceaa2-d631-448b-9ad0-32c097e6c685")
-		(property "Reference" "SW13"
+		(property "Reference" "SW1"
 			(at 115.57 190.5 0)
 			(effects
 				(font
@@ -6986,7 +6986,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 115.57 198.12 0)
 			(effects
 				(font
@@ -7028,7 +7028,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW13")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -7044,7 +7044,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10235f36-2f4e-43bd-867b-17b94f989c50")
-		(property "Reference" "SW3"
+		(property "Reference" "SW12"
 			(at 156.21 224.79 0)
 			(effects
 				(font
@@ -7060,7 +7060,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 156.21 232.41 0)
 			(effects
 				(font
@@ -7102,7 +7102,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW3")
+					(reference "SW12")
 					(unit 1)
 				)
 			)
@@ -7117,7 +7117,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "132dd61e-b61d-4f30-98c5-c498df6d4e8a")
-		(property "Reference" "D15"
+		(property "Reference" "D17"
 			(at 184.15 203.708 0)
 			(effects
 				(font
@@ -7187,7 +7187,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D15")
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -7453,7 +7453,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e157fca-4937-4240-92a3-48ecaf4504bf")
-		(property "Reference" "D8"
+		(property "Reference" "D9"
 			(at 144.78 215.138 0)
 			(effects
 				(font
@@ -7523,7 +7523,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D8")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -7539,7 +7539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e8874a5-a543-4bc1-9c4b-90f5b7424523")
-		(property "Reference" "SW4"
+		(property "Reference" "SW16"
 			(at 175.26 224.79 0)
 			(effects
 				(font
@@ -7555,7 +7555,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 175.26 232.41 0)
 			(effects
 				(font
@@ -7597,7 +7597,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW4")
+					(reference "SW16")
 					(unit 1)
 				)
 			)
@@ -7613,7 +7613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "204dc69f-70ad-40fa-8fdf-dd31b191a0b3")
-		(property "Reference" "SW5"
+		(property "Reference" "SW3"
 			(at 115.57 213.36 0)
 			(effects
 				(font
@@ -7629,7 +7629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 115.57 220.98 0)
 			(effects
 				(font
@@ -7671,7 +7671,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW5")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -7687,7 +7687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "247df105-85c2-47b6-b7f8-71cbdc75d2e7")
-		(property "Reference" "SW10"
+		(property "Reference" "SW6"
 			(at 135.89 201.93 0)
 			(effects
 				(font
@@ -7703,7 +7703,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 135.89 209.55 0)
 			(effects
 				(font
@@ -7745,7 +7745,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW10")
+					(reference "SW6")
 					(unit 1)
 				)
 			)
@@ -7761,7 +7761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25ab9bac-cf11-4cb3-b767-54f43f9532f7")
-		(property "Reference" "SW15"
+		(property "Reference" "SW9"
 			(at 156.21 190.5 0)
 			(effects
 				(font
@@ -7777,7 +7777,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 156.21 198.12 0)
 			(effects
 				(font
@@ -7819,7 +7819,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW15")
+					(reference "SW9")
 					(unit 1)
 				)
 			)
@@ -7834,7 +7834,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2776b996-ad23-4bd6-be24-7bf37a7c4399")
-		(property "Reference" "D14"
+		(property "Reference" "D16"
 			(at 165.1 237.998 0)
 			(effects
 				(font
@@ -7904,7 +7904,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D14")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -7938,7 +7938,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+		(property "Footprint" "SN74HC163DR:SOIC127P600X175-16N"
 			(at 135.89 132.08 0)
 			(effects
 				(font
@@ -8102,7 +8102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c2e66ac-132c-4dcc-8a70-5f62fdd57897")
-		(property "Reference" "SW11"
+		(property "Reference" "SW10"
 			(at 156.21 201.93 0)
 			(effects
 				(font
@@ -8118,7 +8118,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 156.21 209.55 0)
 			(effects
 				(font
@@ -8160,7 +8160,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW11")
+					(reference "SW10")
 					(unit 1)
 				)
 			)
@@ -8176,7 +8176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3da91268-ea00-446b-9e77-f4a3d4f7010b")
-		(property "Reference" "SW16"
+		(property "Reference" "SW13"
 			(at 175.26 190.5 0)
 			(effects
 				(font
@@ -8192,7 +8192,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 175.26 198.12 0)
 			(effects
 				(font
@@ -8234,7 +8234,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW16")
+					(reference "SW13")
 					(unit 1)
 				)
 			)
@@ -8250,7 +8250,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b6eff0f-23e2-4c5f-afcc-9b67e5ab8713")
-		(property "Reference" "R3"
+		(property "Reference" "R4"
 			(at 80.01 38.1 90)
 			(effects
 				(font
@@ -8302,7 +8302,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "R3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -8318,7 +8318,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "523482ad-5ca5-4c10-8a89-f29c5b3d2fa0")
-		(property "Reference" "R6"
+		(property "Reference" "R7"
 			(at 101.6 35.5599 0)
 			(effects
 				(font
@@ -8372,7 +8372,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "R6")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -8387,7 +8387,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "558c3535-79d6-4922-b79e-44847fbca68a")
-		(property "Reference" "D13"
+		(property "Reference" "D15"
 			(at 165.1 226.568 0)
 			(effects
 				(font
@@ -8457,7 +8457,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D13")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -8473,7 +8473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58a212b9-5e8a-4fde-afc4-a8af7b3d3e36")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR01"
 			(at 55.88 190.5 0)
 			(effects
 				(font
@@ -8523,7 +8523,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "#PWR05")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -8538,7 +8538,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "58dfae29-f511-439a-9694-cd8ef5273875")
-		(property "Reference" "D18"
+		(property "Reference" "D20"
 			(at 184.15 237.998 0)
 			(effects
 				(font
@@ -8608,7 +8608,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D18")
+					(reference "D20")
 					(unit 1)
 				)
 			)
@@ -8623,7 +8623,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b21e454-58c2-4e7b-9d48-b0b17c7b033f")
-		(property "Reference" "D9"
+		(property "Reference" "D10"
 			(at 144.78 226.568 0)
 			(effects
 				(font
@@ -8693,7 +8693,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D9")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -8708,7 +8708,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b484563-33b0-4d82-b7ba-8c28e43db92c")
-		(property "Reference" "D17"
+		(property "Reference" "D19"
 			(at 184.15 226.568 0)
 			(effects
 				(font
@@ -8778,7 +8778,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D17")
+					(reference "D19")
 					(unit 1)
 				)
 			)
@@ -8794,7 +8794,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b7e0c10-e0e5-4866-9379-41f9e85b61bf")
-		(property "Reference" "SW9"
+		(property "Reference" "SW2"
 			(at 115.57 201.93 0)
 			(effects
 				(font
@@ -8810,7 +8810,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 115.57 209.55 0)
 			(effects
 				(font
@@ -8852,7 +8852,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW9")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -8867,7 +8867,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5e63cb77-c595-4b9c-a8fe-f79c39b788ff")
-		(property "Reference" "D16"
+		(property "Reference" "D18"
 			(at 184.15 215.138 0)
 			(effects
 				(font
@@ -8937,7 +8937,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D16")
+					(reference "D18")
 					(unit 1)
 				)
 			)
@@ -8952,7 +8952,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5fc1d16d-04e4-4dcb-beb3-373466e9fd34")
-		(property "Reference" "D12"
+		(property "Reference" "D14"
 			(at 165.1 215.138 0)
 			(effects
 				(font
@@ -9022,7 +9022,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D12")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -9037,7 +9037,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "66dfd10b-280f-42a9-b1aa-7d306851a13c")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR06"
 			(at 133.35 78.74 0)
 			(effects
 				(font
@@ -9087,7 +9087,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "#PWR02")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -9103,7 +9103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69d19603-9fb6-4212-88d4-018bee543065")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR02"
 			(at 55.88 236.22 0)
 			(effects
 				(font
@@ -9153,7 +9153,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "#PWR06")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -9169,7 +9169,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d91908c-2439-496a-93f1-b4ae375549c6")
-		(property "Reference" "SW12"
+		(property "Reference" "SW14"
 			(at 175.26 201.93 0)
 			(effects
 				(font
@@ -9185,7 +9185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 175.26 209.55 0)
 			(effects
 				(font
@@ -9227,7 +9227,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW12")
+					(reference "SW14")
 					(unit 1)
 				)
 			)
@@ -9243,7 +9243,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77f2d026-e203-4cb7-949a-c825748b0203")
-		(property "Reference" "R1"
+		(property "Reference" "REG1"
 			(at 58.0741 190.5 0)
 			(effects
 				(font
@@ -9261,7 +9261,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "74HC595DR:SOIC127P600X175-16N"
 			(at 55.88 208.28 0)
 			(effects
 				(font
@@ -9339,7 +9339,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "R1")
+					(reference "REG1")
 					(unit 1)
 				)
 			)
@@ -9355,7 +9355,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79bf293c-7adf-435d-ac63-6ad71a1ee89b")
-		(property "Reference" "SW6"
+		(property "Reference" "SW7"
 			(at 135.89 213.36 0)
 			(effects
 				(font
@@ -9371,7 +9371,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 135.89 220.98 0)
 			(effects
 				(font
@@ -9413,7 +9413,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW6")
+					(reference "SW7")
 					(unit 1)
 				)
 			)
@@ -9429,7 +9429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b450300-d9e0-41a1-a4c6-19a90d70377b")
-		(property "Reference" "C5"
+		(property "Reference" "C3"
 			(at 177.8 49.5299 0)
 			(effects
 				(font
@@ -9483,7 +9483,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "C5")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -9569,7 +9569,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84654803-75b4-45ac-82bb-50668b9c886b")
-		(property "Reference" "R4"
+		(property "Reference" "R6"
 			(at 90.17 53.34 90)
 			(effects
 				(font
@@ -9621,7 +9621,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "R4")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -9636,7 +9636,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84e17299-13e9-406c-a02d-59675cbb838a")
-		(property "Reference" "D20"
+		(property "Reference" "D12"
 			(at 145.542 186.69 0)
 			(effects
 				(font
@@ -9706,7 +9706,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D20")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -9722,7 +9722,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9138835a-4589-4f88-92f5-8247b67ce1f2")
-		(property "Reference" "SW8"
+		(property "Reference" "SW15"
 			(at 175.26 213.36 0)
 			(effects
 				(font
@@ -9738,7 +9738,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 175.26 220.98 0)
 			(effects
 				(font
@@ -9780,7 +9780,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW8")
+					(reference "SW15")
 					(unit 1)
 				)
 			)
@@ -9881,7 +9881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "955dc4e3-8fb3-4931-b380-89fedf7e3d5d")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 63.5 30.48 90)
 			(effects
 				(font
@@ -9933,7 +9933,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10034,7 +10034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5f20612-9e49-43e3-b5d1-598bfb191cca")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR05"
 			(at 133.35 29.21 0)
 			(effects
 				(font
@@ -10084,7 +10084,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "#PWR01")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -10100,7 +10100,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad002d85-8919-4245-9d68-124cffaadcaa")
-		(property "Reference" "SW7"
+		(property "Reference" "SW11"
 			(at 156.21 213.36 0)
 			(effects
 				(font
@@ -10116,7 +10116,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 156.21 220.98 0)
 			(effects
 				(font
@@ -10158,7 +10158,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW7")
+					(reference "SW11")
 					(unit 1)
 				)
 			)
@@ -10259,7 +10259,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c2389005-5fc8-4063-b369-43775af1ccc2")
-		(property "Reference" "R7"
+		(property "Reference" "R8"
 			(at 111.76 59.6899 0)
 			(effects
 				(font
@@ -10313,7 +10313,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "R7")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -10505,7 +10505,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d004c824-84cb-4570-9eea-489e7d1d03aa")
-		(property "Reference" "D7"
+		(property "Reference" "D8"
 			(at 144.78 203.708 0)
 			(effects
 				(font
@@ -10575,7 +10575,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "D7")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -10822,7 +10822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d598052d-5c80-49c2-854e-402d3873c34d")
-		(property "Reference" "SW14"
+		(property "Reference" "SW5"
 			(at 135.89 190.5 0)
 			(effects
 				(font
@@ -10838,7 +10838,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 135.89 198.12 0)
 			(effects
 				(font
@@ -10880,7 +10880,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW14")
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -10896,7 +10896,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d64b90bd-b456-4249-8b64-a4a9b95cd1fc")
-		(property "Reference" "C4"
+		(property "Reference" "C2"
 			(at 167.64 149.8599 0)
 			(effects
 				(font
@@ -10950,7 +10950,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "C4")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -11418,7 +11418,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1f657b6-9239-4b07-a466-98d2396f6985")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 63.5 43.18 90)
 			(effects
 				(font
@@ -11470,7 +11470,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -11486,7 +11486,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe1677ed-b834-4ff8-91cf-2f84c502a1de")
-		(property "Reference" "SW1"
+		(property "Reference" "SW4"
 			(at 115.57 224.79 0)
 			(effects
 				(font
@@ -11502,7 +11502,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+		(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 			(at 115.57 232.41 0)
 			(effects
 				(font
@@ -11544,7 +11544,7 @@
 		(instances
 			(project "open_game_pad_classic"
 				(path "/49f049bd-a8cc-4b05-820e-5d41d7ecc0be"
-					(reference "SW1")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
