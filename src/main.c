@@ -23,8 +23,6 @@ static report_t *RPTR = &REPORT;
 static uchar IDLE_RATE;
 // Inpur counter allows to define which key we are reading as a digital input or which axis as an analog input.
 static volatile inputCounter ic = { .raw = 0 };
-// This value will accumulate undecoded value defining the pressed keys.
-static volatile uint8_t keyPlex;
 
 /* 
  * Game Pad report descriptor. 
@@ -48,7 +46,7 @@ PROGMEM const char usbDescriptorHidReport[REPORT_DESCRIPTOR_SIZE] = {
     0x81, 0x02,                    //     INPUT (Data,Var,Abs)
     // Unused bits are ignored.
     0x95, 0x01,                    //     REPORT_COUNT (1)
-    0x75, 0x06,                    //     REPORT_SIZE (6)
+    0x75, 0x0D,                    //     REPORT_SIZE (14)
     0x81, 0x03,                    //     INPUT (Cnst,Var,Abs)
     // Joysticks handling.
     0x05, 0x01,                    //     USAGE_PAGE (Generic Desktop)
@@ -95,6 +93,7 @@ int __attribute__((noreturn)) main(void) {
     // PB1, PB2 lines are handled by V-USB. PB0 is a digital input line by default. 
     // The clock is being bit-banged inside the ADC interrupt handler.
     DDRB = 1 << PB4;        // CLK output.
+    PCMSK = 1 << PCINT0;    // The PCINT interrupt will be invoked only when something changes on PB0.
 
     /*      ADC Configuration       */
     // - Only 8 highest bits are required, therefore 1 Mhz sampling can be used for faster conversion. This sampling is a limit declared 
@@ -112,6 +111,7 @@ int __attribute__((noreturn)) main(void) {
     _delay_ms(300);                        // USB would be disconnected for 300 ms.
     usbDeviceConnect();
 
+    GIMSK = 1 << PCIE;
     // Main loop only handles the USB connection and resets the watchdog timer.
     sei();
     for(;;) {
@@ -123,10 +123,6 @@ int __attribute__((noreturn)) main(void) {
             usbSetInterrupt((void *) RPTR, sizeof(REPORT));
         }
 
-        // Here we obtain the undecoded byte from the PISO register.
-        if(keyPlex & (1 << 7)) {           // The MSB in 'keyPlex' variable is indicating if button was pressed.
-           // TODO! DECODING. 
-        }
     }
 }
 
@@ -139,7 +135,20 @@ int __attribute__((noreturn)) main(void) {
 ISR(ADC_vect) {
     PORTB ^= (1 << PB4);                          // Clock tick.
     RPTR->joyax[ic.ANALOG] = ADCH;                // Writing the next analog input to the proper location.
-    keyPlex |= (PINB & (1 << PB0)) << ic.DIGITAL; // Writing the next bit obtained from the PISO register MSB first. 
     ADCSRA |= (1 << ADSC);                        // Starting new ADC conversion.
     ic.raw++;
+
+    if(ic.raw > 18) ic.raw = 0;
+}
+
+/* 
+ * Sets an interrupt for the PB0 pin. 
+ * 
+ * INT0 is reserved for the V-USB use. The PCINT[5..0] would cause this interrupt.
+ * This handler detects a keypress obtained from the key matrix and iterates over each key to
+ * define which key was pressed. All pressed keys are then saved into a mask and send via USB
+ * connection.
+ * */
+ISR(PCINT0_vect) {
+    RPTR->bmask = (PORTB & 1) << ic.DIGITAL;      // Marking the value in the button mask. This way several keys can be pressed in one loop.
 }
