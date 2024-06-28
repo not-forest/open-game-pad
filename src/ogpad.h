@@ -15,10 +15,8 @@
  *  This report is then sent to the host device via USB protocol. The report format must be compatible with the HID report.
  * */
 typedef struct {
-    // Button mask for all 16 keys. Each bit corresponds to a key value.
-    uint16_t bmask;
-    // Only two bits matter.
-    uint8_t joyb; 
+    // Button mask for all 18 keys. Each bit corresponds to a key value. Overflowing values will be always ignored.
+    uint32_t bmask;
     // The joystick axises are defined in the following order: left HORIZONTAL, left VERTICAL, right HORIZONTAL, right VERTICAL.
     int8_t joyax[4];
 } __attribute__((packed)) report_t;
