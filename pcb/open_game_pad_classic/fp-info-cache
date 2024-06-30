@@ -1,4 +1,4 @@
-23205697551302825
+23224608603420612
 74C922
 DIL18
 <b>Dual In Line Package</b>
@@ -13,6 +13,41 @@ SO20W
 0
 20
 20
+74HC595DR
+SOIC127P600X175-16N
+
+
+0
+16
+16
+74HC4051D_653
+SOIC127P600X175-16N
+
+
+0
+16
+16
+74HC4052D_653
+SOIC127P600X175-16N
+
+
+0
+16
+16
+74HC4052D_653_NIX
+SOIC127P600X175-16N
+
+
+0
+16
+16
+ATTINY85-20SU
+SOIC127P798X216-8N
+
+
+0
+8
+8
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63503,6 +63538,20 @@ Yellow 5381 Series LED
 0
 2
 2
+LM358
+DIL8
+
+
+0
+8
+8
+LM358DT
+SOIC127P600X175-8N
+
+
+0
+8
+8
 Library
 JCOM
 
@@ -87226,6 +87275,27 @@ rotary encoder
 0
 7
 6
+SN74AHC1G04DBVR
+SOT95P280X145-5N
+
+
+0
+5
+5
+SN74HC157DR
+SOIC127P600X175-16N
+
+
+0
+16
+16
+SN74HC163DR
+SOIC127P600X175-16N
+
+
+0
+16
+16
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -88880,6 +88950,13 @@ Logo WEEE
 0
 TS02-66-95-BK-260-LCR-D
 SW_TS02-66-95-BK-260-LCR-D
+
+
+0
+4
+4
+TS04-66-95-BK-100-SMT
+SW_TS04-66-95-BK-100-SMT
 
 
 0

@@ -50,3 +50,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+pcb/open_game_pad_classic/open_game_pad_classic-backups/*
+

@@ -122,7 +122,6 @@ int __attribute__((noreturn)) main(void) {
         if(usbInterruptIsReady()) {        // If interrupt is ready, sending the newest data.
             usbSetInterrupt((void *) RPTR, sizeof(REPORT));
         }
-
     }
 }
 
