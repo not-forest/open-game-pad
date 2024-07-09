@@ -2709,6 +2709,420 @@
 				)
 			)
 		)
+		(symbol "SW_SPST_45_DEG_1"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW1"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TS04-66-95-BK-100-SMT"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch 45 deg"
+				(at 0.508 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_45_DEG_1_0_0"
+				(circle
+					(center -1.27 1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 -1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_45_DEG_1_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_45_DEG_1_1_1"
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SW_SPST_45_DEG_2"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW1"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TS04-66-95-BK-100-SMT"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch 45 deg"
+				(at 0.508 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_45_DEG_2_0_0"
+				(circle
+					(center -1.27 1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 -1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_45_DEG_2_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_45_DEG_2_1_1"
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "custom:74HC163"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3064,23 +3478,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0.508 2.286 0)
+			(property "Reference" "SW1"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SW_SPST_45_DEG"
-				(at 0 0 0)
+			(property "Value" "TS04-66-95-BK-100-SMT"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "TS02-66-95-BK-260-LCR-D:SW_TS02-66-95-BK-260-LCR-D"
+			(property "Footprint" "TS04-66-95-BK-100-SMT:SW_TS04-66-95-BK-100-SMT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3210,7 +3624,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at 5.08 -2.54 180)
 					(length 2.54)
 					(name "A"
 						(effects
@@ -3228,7 +3642,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at -5.08 2.54 0)
 					(length 2.54)
 					(name "B"
 						(effects
@@ -6546,7 +6960,7 @@
 		(fields_autoplaced yes)
 		(uuid "0498f4aa-5a49-4779-8490-ecf06819b38c")
 		(property "Reference" "SW8"
-			(at 135.89 224.79 0)
+			(at 135.89 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6554,7 +6968,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 135.89 227.33 0)
+			(at 135.89 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7005,6 +7419,7 @@
 		)
 	)
 	(symbol
+		(lib_name "SW_SPST_45_DEG_1")
 		(lib_id "custom:SW_SPST_45_DEG")
 		(at 115.57 198.12 0)
 		(unit 1)
@@ -7022,7 +7437,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "TS04-66-95-BK-100-SMT"
 			(at 115.57 193.04 0)
 			(effects
 				(font
@@ -7089,7 +7504,7 @@
 		(fields_autoplaced yes)
 		(uuid "10235f36-2f4e-43bd-867b-17b94f989c50")
 		(property "Reference" "SW12"
-			(at 156.21 224.79 0)
+			(at 156.21 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7097,7 +7512,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 156.21 227.33 0)
+			(at 156.21 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7584,7 +7999,7 @@
 		(fields_autoplaced yes)
 		(uuid "1e8874a5-a543-4bc1-9c4b-90f5b7424523")
 		(property "Reference" "SW16"
-			(at 175.26 224.79 0)
+			(at 175.26 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7592,7 +8007,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 175.26 227.33 0)
+			(at 175.26 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7658,7 +8073,7 @@
 		(fields_autoplaced yes)
 		(uuid "204dc69f-70ad-40fa-8fdf-dd31b191a0b3")
 		(property "Reference" "SW3"
-			(at 115.57 213.36 0)
+			(at 115.57 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7666,7 +8081,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 115.57 215.9 0)
+			(at 115.57 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7732,7 +8147,7 @@
 		(fields_autoplaced yes)
 		(uuid "247df105-85c2-47b6-b7f8-71cbdc75d2e7")
 		(property "Reference" "SW6"
-			(at 135.89 201.93 0)
+			(at 135.89 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7740,7 +8155,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 135.89 204.47 0)
+			(at 135.89 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7806,7 +8221,7 @@
 		(fields_autoplaced yes)
 		(uuid "25ab9bac-cf11-4cb3-b767-54f43f9532f7")
 		(property "Reference" "SW9"
-			(at 156.21 190.5 0)
+			(at 156.21 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7814,7 +8229,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 156.21 193.04 0)
+			(at 156.21 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8147,7 +8562,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c2e66ac-132c-4dcc-8a70-5f62fdd57897")
 		(property "Reference" "SW10"
-			(at 156.21 201.93 0)
+			(at 156.21 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8155,7 +8570,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 156.21 204.47 0)
+			(at 156.21 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8221,7 +8636,7 @@
 		(fields_autoplaced yes)
 		(uuid "3da91268-ea00-446b-9e77-f4a3d4f7010b")
 		(property "Reference" "SW13"
-			(at 175.26 190.5 0)
+			(at 175.26 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8229,7 +8644,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 175.26 193.04 0)
+			(at 175.26 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8838,7 +9253,7 @@
 		(fields_autoplaced yes)
 		(uuid "5b7e0c10-e0e5-4866-9379-41f9e85b61bf")
 		(property "Reference" "SW2"
-			(at 115.57 201.93 0)
+			(at 115.57 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8846,7 +9261,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 115.57 204.47 0)
+			(at 115.57 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9213,7 +9628,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d91908c-2439-496a-93f1-b4ae375549c6")
 		(property "Reference" "SW14"
-			(at 175.26 201.93 0)
+			(at 175.26 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9221,7 +9636,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 175.26 204.47 0)
+			(at 175.26 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9399,7 +9814,7 @@
 		(fields_autoplaced yes)
 		(uuid "79bf293c-7adf-435d-ac63-6ad71a1ee89b")
 		(property "Reference" "SW7"
-			(at 135.89 213.36 0)
+			(at 135.89 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9407,7 +9822,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 135.89 215.9 0)
+			(at 135.89 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9766,7 +10181,7 @@
 		(fields_autoplaced yes)
 		(uuid "9138835a-4589-4f88-92f5-8247b67ce1f2")
 		(property "Reference" "SW15"
-			(at 175.26 213.36 0)
+			(at 175.26 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9774,7 +10189,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 175.26 215.9 0)
+			(at 175.26 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10144,7 +10559,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad002d85-8919-4245-9d68-124cffaadcaa")
 		(property "Reference" "SW11"
-			(at 156.21 213.36 0)
+			(at 156.21 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10152,7 +10567,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 156.21 215.9 0)
+			(at 156.21 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10856,6 +11271,7 @@
 		)
 	)
 	(symbol
+		(lib_name "SW_SPST_45_DEG_2")
 		(lib_id "custom:SW_SPST_45_DEG")
 		(at 135.89 198.12 0)
 		(unit 1)
@@ -11530,7 +11946,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe1677ed-b834-4ff8-91cf-2f84c502a1de")
 		(property "Reference" "SW4"
-			(at 115.57 224.79 0)
+			(at 115.57 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11538,7 +11954,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 115.57 227.33 0)
+			(at 115.57 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
