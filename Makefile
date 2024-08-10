@@ -3,10 +3,15 @@
 ##############################################################################
 
 DEVICE  = attiny85
-FUSE_L  = 0xa2 
+FUSE_L  = 0xa1
 FUSE_H  = 0xdd
-AVRDUDE = avrdude -c usbasp -p $(DEVICE)
-F_CPU 	= 16500000
+
+PORT    = /dev/ttyACM0
+PROG    = stk500v1
+BAUD	= 19200
+AVRDUDE = avrdude -c $(PROG) -b $(BAUD) -p $(DEVICE) -P $(PORT)
+
+F_CPU 	= 16500000L
 
 CFLAGS  = -Iusbdrv -I. -DDEBUG_LEVEL=0
 OBJECTS = usbdrv/usbdrv.o usbdrv/usbdrvasm.o usbdrv/oddebug.o src/main.o
@@ -19,9 +24,9 @@ COMPILE = avr-gcc -mmcu=$(DEVICE) -DF_CPU=$(F_CPU) -Wall -Os $(CFLAGS)
 # Made based on fuse calculator: https://www.engbedded.com/fusecalc/		 #
 ################################## ATtiny85 ##################################
 # FUSE_L (Fuse low byte):
-# 0xa2 = 1 0 1 0   0 0 1 0
+# 0xa2 = 1 0 1 0   0 0 0 1
 #        ^ ^ \ /   \--+--/
-#        | |  |       +------- CKSEL 3..0 (internal crystal 8 Mhz)
+#        | |  |       +------- CKSEL 3..0 (PLL Clock source 16MHz)
 #        | |  +--------------- SUT 1..0 (startup time + 64ms)
 #        | +------------------ CKOUT (clock output on CKOUT pin -> enabled)
 #        +-------------------- CKDIV8 (divide clock by 8 -> disabled)
@@ -74,10 +79,6 @@ clean:
 	$(COMPILE) -S $< -o $@
 
 # file targets:
-
-# Since we don't want to ship the driver multipe times, we copy it into this project:
-usbdrv:
-	cp -r ../../../usbdrv .
 
 main.elf: $(OBJECTS)
 	$(COMPILE) -o main.elf $(OBJECTS)
