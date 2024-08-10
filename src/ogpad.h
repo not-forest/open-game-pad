@@ -7,7 +7,6 @@
 
 #include <stdint.h>
 
-#define REPORT_DESCRIPTOR_SIZE 58
 
 /* 
  *  Custom structure that describes data obtained from the game pad.
@@ -31,7 +30,7 @@ typedef union {
     uint8_t raw;            // Full byte with five last bits always unused.
     
     uint8_t ANALOG: 2;      // Two lower bits for 4 analog inputs.
-    uint8_t DIGITAL: 3;     // 3 lower bits for 18 digital inputs encoded in a 5-bit value MSB first. 
+    uint8_t DIGITAL: 5;     // 5 lower bits for 18 digital inputs encoded in a 5-bit value MSB first. 
 } inputCounter;
 
 // Game Pad report holds the current pressed keys and joystick axises derivatives.
