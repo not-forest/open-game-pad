@@ -29,7 +29,7 @@ static volatile inputCounter ic = { .raw = 0 };
  *
  * It defines a device's buttons and joysticks via USB report descriptor. 
  * */
-PROGMEM const char usbDescriptorHidReport[REPORT_DESCRIPTOR_SIZE] = {
+PROGMEM const char usbDescriptorHidReport[USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH] = {
     // Global information.
     0x05, 0x01,                    // USAGE_PAGE (Generic Desktop)
     0x09, 0x05,                    // USAGE (Gamepad)
@@ -72,10 +72,10 @@ usbMsgLen_t usbFunctionSetup(uchar raw[8]) {
     if((req->bmRequestType & USBRQ_TYPE_MASK) == USBRQ_TYPE_CLASS){
         if(req->bRequest == USBRQ_HID_GET_REPORT){  /* wValue: ReportType (highbyte), ReportID (lowbyte) */
             // we only have one report type, so don't look at wValue
-            usbMsgPtr = (unsigned short) (void *) RPTR;
+            usbMsgPtr = (void *) RPTR;
             return sizeof(REPORT);
         }else if(req->bRequest == USBRQ_HID_GET_IDLE){
-            usbMsgPtr = (unsigned short) &IDLE_RATE;
+            usbMsgPtr = &IDLE_RATE;
             return 1;
         }else if(req->bRequest == USBRQ_HID_SET_IDLE){
             IDLE_RATE = req->wValue.bytes[1];
@@ -87,8 +87,44 @@ usbMsgLen_t usbFunctionSetup(uchar raw[8]) {
     return 0;
 }
 
+#define abs(x) ((x) > 0 ? (x) : (-x))
+
+// Calibrates the RC oscillator to 16.5 MHz speeds.
+void hadUsbReset(void) {
+    int frameLength, targetLength = (unsigned)(1499 * (double)F_CPU / 10.5e6 + 0.5);
+    int bestDeviation = 9999;
+    uchar trialCal, bestCal, step, region;
+
+    // do a binary search in regions 0-127 and 128-255 to get optimum OSCCAL
+    for(region = 0; region <= 1; region++) {
+        frameLength = 0;
+        trialCal = (region == 0) ? 0 : 128;
+        
+        for(step = 64; step > 0; step >>= 1) { 
+            if(frameLength < targetLength) // true for initial iteration
+                trialCal += step; // frequency too low
+            else
+                trialCal -= step; // frequency too high
+                
+            OSCCAL = trialCal;
+
+            cli();
+            frameLength = usbMeasureFrameLength();
+            sei();
+
+            if(abs(frameLength-targetLength) < bestDeviation) {
+                bestCal = trialCal; // new optimum found
+                bestDeviation = abs(frameLength -targetLength);
+            }
+        }
+    }
+
+    OSCCAL = bestCal;
+}
+
 // Main function that initializes registers with required values and then waits for interrupts.
 int __attribute__((noreturn)) main(void) {
+    wdt_disable();
     /*      GPIO Configuration      */
     // PB1, PB2 lines are handled by V-USB. PB0 is a digital input line by default. 
     // The clock is being bit-banged inside the ADC interrupt handler.
@@ -104,12 +140,16 @@ int __attribute__((noreturn)) main(void) {
     ADMUX = (1 << MUX1) | (1 << MUX0) | (1 << ADLAR);
 
     wdt_enable(WDTO_1S);                   // Enabling the watchdog timer and selecting the 1s expiring.
-    usbInit();                             // Start of USB handling.
     
-    usbDeviceDisconnect();                 // Forcing re-enumeration.
+    usbDeviceDisconnect();                    // Forcing re-enumeration.
     wdt_reset();                           // One second is enough for the next step.
-    _delay_ms(300);                        // USB would be disconnected for 300 ms.
+    uchar i = 0;
+    while(--i){             // USB would be disconnected for 300 ms.
+        wdt_reset();
+        _delay_ms(1);
+    }                       
     usbDeviceConnect();
+    usbInit();                             // Start of USB handling.
 
     GIMSK = 1 << PCIE;
     // Main loop only handles the USB connection and resets the watchdog timer.
