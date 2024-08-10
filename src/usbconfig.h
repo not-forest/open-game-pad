@@ -106,7 +106,7 @@ General Description:
  * interval. The value is in milliseconds and must not be less than 10 ms for
  * low speed devices.
  */
-#define USB_CFG_INTR_POLL_INTERVAL      100
+#define USB_CFG_INTR_POLL_INTERVAL      10
 /* Define this to 1 if the device has its own power supply. Set it to 0 if the
  * device is powered from the USB bus.
  */
@@ -115,7 +115,7 @@ General Description:
  * The value is in milliamperes. [It will be divided by two since USB
  * communicates power requirements in units of 2 mA.]
  */
-#define USB_CFG_MAX_BUS_POWER           20
+#define USB_CFG_MAX_BUS_POWER           100
 /* Set this to 1 if you want usbFunctionWrite() to be called for control-out
  * transfers. Set it to 0 if you don't need it and want to save a couple of
  * bytes.
@@ -155,7 +155,7 @@ General Description:
  * proceed, do a return after doing your things. One possible application
  * (besides debugging) is to flash a status LED on each packet.
  */
-/* #define USB_RESET_HOOK(resetStarts)     if(!resetStarts){hadUsbReset();} */
+#define USB_RESET_HOOK(resetStarts)     if(!resetStarts){hadUsbReset();}
 /* This macro is a hook if you need to know when an USB RESET occurs. It has
  * one parameter which distinguishes between the start of RESET state and its
  * end.
@@ -196,7 +196,7 @@ General Description:
  * usbFunctionWrite(). Use the global usbCurrentDataToken and a static variable
  * for each control- and out-endpoint to check for duplicate packets.
  */
-#define USB_CFG_HAVE_MEASURE_FRAME_LENGTH   0
+#define USB_CFG_HAVE_MEASURE_FRAME_LENGTH   1
 /* define this macro to 1 if you want the function usbMeasureFrameLength()
  * compiled in. This function can be used to calibrate the AVR's RC oscillator.
  */
@@ -278,7 +278,7 @@ General Description:
  * "usbHidReportDescriptor" to your code which contains the report descriptor.
  * Don't forget to keep the array and this define in sync!
  */
-#define USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH    58
+#define USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH 52
 
 /* #define USB_PUBLIC static */
 /* Use the define above if you #include usbdrv.c instead of linking against it.
