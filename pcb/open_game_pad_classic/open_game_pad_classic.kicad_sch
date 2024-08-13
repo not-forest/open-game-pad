@@ -4480,6 +4480,10 @@
 		(uuid "fd91d18b-fe67-4833-9afd-a1d6fa8c396c")
 	)
 	(no_connect
+		(at 66.04 198.12)
+		(uuid "0667230f-9158-4d0d-a8ef-dfd73fe09be8")
+	)
+	(no_connect
 		(at 146.05 127)
 		(uuid "25075be4-c372-4d84-b995-85aa0a98e043")
 	)
@@ -4494,6 +4498,10 @@
 	(no_connect
 		(at 66.04 213.36)
 		(uuid "bedc7514-f02b-4950-9732-801101257870")
+	)
+	(no_connect
+		(at 66.04 220.98)
+		(uuid "c1b9781c-31aa-4c96-921d-4236d34c11bf")
 	)
 	(wire
 		(pts
